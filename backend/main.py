@@ -13,7 +13,7 @@ async def lifespan(app: FastAPI):
         print(f"Database initialization warning: {e}")
     yield
 
-app = FastAPI(title="NyumbaLink API", version="1.0.1", lifespan=lifespan)
+app = FastAPI(title="GladysNyumbaConnect API", version="1.0.1", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -34,7 +34,7 @@ app.include_router(properties.router)
 
 @app.get("/")
 def root():
-    return {"message": "NyumbaLink API is running"}
+    return {"message": "GladysNyumbaConnect API is running"}
 
 @app.get("/api/health")
 def health():
