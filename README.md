@@ -178,7 +178,3 @@ For automatic builds on push, connect your GitHub repository directly in the [Ve
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-```
-
-```
