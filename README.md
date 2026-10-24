@@ -1,23 +1,35 @@
-# NyumbaLink FastAPI Backend & Web Application
 
-NyumbaLink is a property listing and aggregation platform built for searching, buying, and renting land and housing across Kenya.
+# Chrome Homeland FastAPI Backend & Web Application
+
+Chrome Homeland is a property listing and aggregation platform built for searching, buying, and renting land and housing across Kenya.
 
 ## Features
 - **Authentication & Security:** Role-based signup (`landlord`, `seeker`), JWT access tokens, bcrypt password hashing, CORS security, and production console-log stripping.
+
 - **Property Management:** Protected endpoints for landlord property listings with automatic ORM owner eager-loading (`joinedload`).
+
 - **Search & Filtering:** Real-time search by county, town, property type (`rent`/`sale`), purpose, and availability.
+
 - **Direct Owner Engagement:** Clean, isolated WhatsApp and direct-dial modal triggers populated with owner contact details.
+
 - **Legal & Compliance:** Complete Kenyan statutory compliance (Data Protection Act 2019, Cybercrimes Act 2018) with built-in ReportLab PDF term generator scripts.
+
 - **Interactive API Documentation:** Full OpenAPI / Swagger documentation out of the box.
+
 
 ---
 
 ## Tech Stack
 - **Backend:** FastAPI, Python 3.10+, SQLAlchemy ORM, Pydantic v2
+
 - **Database:** SQLite (Development) / PostgreSQL (Production)
+
 - **PDF Generation:** ReportLab
+
 - **Frontend:** Vanilla JS (ES6+), Modern HTML5 & CSS3
+
 - **Deployment:** Vercel / Railway / Render
+
 
 ---
 
@@ -28,8 +40,8 @@ NyumbaLink is a property listing and aggregation platform built for searching, b
 Clone the repository and create a virtual environment:
 
 ```bash
-git clone [https://github.com/your-username/nyumbalink.git](https://github.com/your-username/nyumbalink.git)
-cd nyumbalink
+git clone https://github.com/Njorodev/Chrome-Homeland.git
+cd Chrome-Homeland
 
 # Create virtual environment
 python -m venv venv
@@ -38,20 +50,19 @@ python -m venv venv
 
 **Activate Virtual Environment:**
 
-* **Windows (PowerShell):**
+* **Windows (PowerShell/CMD):**
+
 ```powershell
 .\venv\Scripts\activate
 
 ```
 
-
 * **Linux/macOS:**
+
 ```bash
 source venv/bin/activate
 
 ```
-
-
 
 ### 2. Install Dependencies
 
@@ -92,7 +103,7 @@ uvicorn app.main:app --reload
 Once running, access the interactive API docs at:
 
 * **Swagger UI:** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-* **ReDoc:** [http://127.0.0.1:8000/redoc](https://www.google.com/search?q=http://127.0.0.1:8000/redoc)
+* **ReDoc:** [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
 
 ---
 
@@ -160,7 +171,7 @@ vercel
 
 ```
 
-For automatic builds on push, connect your GitHub/GitLab repository directly in the [Vercel Dashboard](https://vercel.com).
+For automatic builds on push, connect your GitHub repository directly in the [Vercel Dashboard](https://vercel.com).
 
 ---
 
