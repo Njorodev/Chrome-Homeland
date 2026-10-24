@@ -239,7 +239,7 @@ function renderProperties(properties) {
                 </div>
 
                   <p class="property-location">
-                    <img src="assets/location.png" alt="Location" class="location-icon" style="height: 1em; width: auto; vertical-align: middle;" />
+                    <img src="assets/location-icon.png" alt="Location" class="location-icon" style="height: 1em; width: auto; vertical-align: middle;" />
                     ${propertyTown}${propertyTown && propertyCounty ? ", " : ""}${propertyCounty}
                   </p>
 
