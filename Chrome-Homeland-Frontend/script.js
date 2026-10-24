@@ -238,10 +238,10 @@ function renderProperties(properties) {
                   <h3>${title}</h3>
                 </div>
 
-                <p class="property-location">
-                  <span class="location-icon">⌖</span>
-                  ${propertyTown}${propertyTown && propertyCounty ? ", " : ""}${propertyCounty}
-                </p>
+                  <p class="property-location">
+                    <img src="assets/location.png" alt="Location" class="location-icon" style="height: 1em; width: auto; vertical-align: middle;" />
+                    ${propertyTown}${propertyTown && propertyCounty ? ", " : ""}${propertyCounty}
+                  </p>
 
                 <div class="property-card-details">
 
