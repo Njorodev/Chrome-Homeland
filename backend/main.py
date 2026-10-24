@@ -13,7 +13,7 @@ async def lifespan(app: FastAPI):
         print(f"Database initialization warning: {e}")
     yield
 
-app = FastAPI(title="GladysNyumbaConnect API", version="1.0.1", lifespan=lifespan)
+app = FastAPI(title="Chrome Homeland API", version="1.0.2", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -21,8 +21,8 @@ app.add_middleware(
         "http://localhost:5500",
         "http://127.0.0.1:8080", 
         "http://localhost:8080",
-        "https://gladysnyumbaconnect.onrender.com",
-        "https://gladysnyumbaconnect-backend.vercel.app"  # Your backend domain if making self-requests
+        "https://cgrome-homeland.onrender.com",
+        "https://chrome-homeland-backend.vercel.app"  # Your backend domain if making self-requests
         
     ],
     allow_credentials=True,
@@ -34,7 +34,7 @@ app.include_router(properties.router)
 
 @app.get("/")
 def root():
-    return {"message": "GladysNyumbaConnect API is running"}
+    return {"message": "Chrome Homeland API is running"}
 
 @app.get("/api/health")
 def health():
