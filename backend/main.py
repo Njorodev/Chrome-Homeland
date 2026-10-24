@@ -21,7 +21,7 @@ app.add_middleware(
         "http://localhost:5500",
         "http://127.0.0.1:8080", 
         "http://localhost:8080",
-        "https://cgrome-homeland.onrender.com",
+        "https://chrome-homeland.onrender.com",
         "https://chrome-homeland-backend.vercel.app"  # Your backend domain if making self-requests
         
     ],
